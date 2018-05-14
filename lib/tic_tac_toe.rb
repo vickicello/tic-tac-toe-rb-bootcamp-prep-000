@@ -16,3 +16,13 @@ WIN_COMBINATIONS = [
    puts "-----------"
    puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
+
+def input_to_index(input)
+  index = input.to_i - 1
+end
+
+def move(boardArray, index, value = "X")
+  boardArray [index] = value
+end
+
+
