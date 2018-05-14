@@ -64,5 +64,34 @@ end
 def current_player(board)
   turn_count(board).even? ?  "X":"O"
 end
+
+def won?(board)
+  winning_combos(board).first
+end
+
+def full?(board)
+  !board.any? do |board_position|
+   board_position == " "
+ end
+end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
+def over?(board)
+  won?(board) || draw?(board) || full?(board)
+end
+
+def winner(board)
+  winning_combination = won?(board)
+  if winning_combination == nil
+     nil
+     elsif board[winning_combination[0]] == "X"
+     "X"
+   else
+     "O"
+   end
+end
   
 
