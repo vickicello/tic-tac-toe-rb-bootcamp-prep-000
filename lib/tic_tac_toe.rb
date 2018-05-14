@@ -104,7 +104,8 @@ def play(board)
   until over?(board)
   turn(board)
 end
-  if winner(board)
+  letter = winner(board)
+  if winner(board) 
     puts "Congratulations, #{letter}!"
   
 
