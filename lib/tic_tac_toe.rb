@@ -67,6 +67,10 @@ end
 
 def won?(board)
   winning_combos(board).first
+  if draw?(board)
+    false
+  else
+    true
 end
 
 def full?(board)
