@@ -106,6 +106,9 @@ def play(board)
 end
   letter = winner(board)
   if letter != nil
-    puts "Congratulations, #{letter}!"
+    puts "Congratulations #{letter}!"
+  else
+    puts "Cat's Game!"
+  end
   
 
