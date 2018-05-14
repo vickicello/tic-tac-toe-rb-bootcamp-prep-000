@@ -27,8 +27,8 @@ def input_to_index(input)
   index = input.to_i - 1
 end
 
-def move(boardArray, index, value = "X")
-  boardArray [index] = value
+def move(board, index, value = "X")
+  board [index] = value
 end
 
 def position_taken?(board, index)
