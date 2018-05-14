@@ -105,7 +105,7 @@ def play(board)
   turn(board)
 end
   letter = winner(board)
-  if winner(board) 
+  if letter != nil
     puts "Congratulations, #{letter}!"
   
 
