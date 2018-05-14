@@ -52,5 +52,6 @@ def turn(board)
 end
 
 def turn_count(board)
-  
+  counter = 0
+  for each
 
