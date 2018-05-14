@@ -25,4 +25,8 @@ def move(boardArray, index, value = "X")
   boardArray [index] = value
 end
 
+def position_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
+end
+
 
