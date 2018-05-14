@@ -9,6 +9,12 @@ WIN_COMBINATIONS = [
   [2,5,8]
   ]
   
+def winning_combos(board)
+WIN_COMBINATIONS.select do |winning_combo|
+    (board[winning_combo[0]] == "X" && board[winning_combo[1]] == "X" && board[winning_combo[2]] == "X") || (board[winning_combo[0]] == "O" && board[winning_combo[1]] == "O" && board[winning_combo[2]] == "O")
+   end
+end
+  
   def display_board(board)
    puts " #{board[0]} | #{board[1]} | #{board[2]} "
    puts "-----------"
